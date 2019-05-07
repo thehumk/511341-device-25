@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Андрей Пономарев](https://up.htmlacademy.ru/htmlcss/25/user/511341).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Шабельников](https://htmlacademy.ru/profile/hulkaton).
 
 ---
 
