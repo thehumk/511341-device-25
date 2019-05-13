@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
 </head>
-
 <body>
     <header class="container main-header">
-        <a href="#" class="logo"><img src="#" alt="device"></a>
+        <a href="index.html" class="logo"><img src="#" alt="device"></a>
         <div class="middle-head">
             <!-- Здесь будет форма -->
             <a href="#" class="login-link">Войти</a>
@@ -46,7 +44,7 @@
                 <li class="head-nav-main">
                     <a href="#">Гарантия</a>
                 </li>
-                <li class="head-nav-main head-nav-contacts">
+                <li class="head-nav-main">
                     <a href="#">Контакты</a>
                 </li>
             </ul>
@@ -54,66 +52,65 @@
     </header>
     <main>
         <div class="container">
-            <!-- Здесь будет слайдер -->
-            <ul class="categories-list">
-                <li class="categories-item">
-                    <a href="#">Виртуальная реальность</a>
+            <h1 class="catalog-title">Моноподы для селфи</h1>
+            <ol class="breadcrumbs-list">
+                <li>
+                    <a href="index.html" class="breadcrumbs-home">Главная</a>
                 </li>
-                <li class="categories-item">
-                    <a href="catalog.html">Моноподы для селфи</a>
+                <li>
+                    <a href="#" class="breadcrumbs-next">Каталог товаров</a>
                 </li>
-                <li class="categories-item">
-                    <a href="#">Экшн-камеры</a>
+                <li>
+                    <a href="#" class="breadcrumbs-next">Моноподы для селфи</a>
                 </li>
-                <li class="categories-item">
-                    <a href="#">Фитнес-браслеты</a>
+            </ol>
+        </div>
+        <div class="catalog-container">
+            <div class="filter-title">Фильтр:</div>
+            <!-- Здесь будет сортировка -->
+        </div>
+        <!-- Здесь будет фильтр -->
+        <section class="catalog">
+            <ul>
+                <li class="catalog-item">
+                    <div class="image">
+                        <img src="#" alt="Любительская селфи-палка">
+                    </div>
+                    <h3 class="catalog-name">Любительская селфи-палка</h3>
+                    <div class="price">500 руб.</div>
                 </li>
-                <li class="categories-item">
-                    <a href="#">Умные часы</a>
+                <li class="catalog-item">
+                    <div class="image">
+                        <img src="#" alt="Профессиональная селфи-палка">
+                    </div>
+                    <h3 class="catalog-name">Профессиональная селфи-палка</h3>
+                    <div class="price">1500 руб.</div>
                 </li>
-                <li class="categories-item">
-                    <a href="#">Квадрокоптеры</a>
+                <li class="catalog-item">
+                    <div class="image">
+                        <img src="#" alt="Непотопляемая селфи-палка">
+                    </div>
+                    <h3 class="catalog-name">Непотопляемая селфи-палка</h3>
+                    <div class="price">2500 руб.</div>
+                </li>
+                <li class="catalog-item">
+                    <div class="image">
+                        <img src="#" alt="Селфи-палка «Следуй за мной»">
+                    </div>
+                    <h3 class="catalog-name">Селфи-палка «Следуй за мной»</h3>
+                    <div class="price">4900 руб.</div>
                 </li>
             </ul>
-        </div>
-        <!-- Здесь будет слайдер -->
-        <div class="container">
-            <section class="brands">
-                <ul>
-                    <li>
-                        <a href="#"><img src="#" alt="DJI"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="#" alt="SP Gadgets"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="#" alt="GoPro"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="#" alt="VIVE"></a>
-                    </li>
-                </ul>
-            </section>
-            <div class="company-container">
-                <section class="description">
-                    <h2 class="company-head">О нас</h2>
-                    <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-                    <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-                    <ul class="delivery">
-                        <li>Деловые Линии</li>
-                        <li>Автотрейдинг</li>
-                        <li>ЖелДорЭкспедиция</li>
-                    </ul>
-                    <a href="#" class="about-us">Подробнее о нас</a>
-                </section>
-                <section class="contacts">
-                    <h2 class="company-head">Контакты</h2>
-                    <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                    <a href="#" class="map"><img src="#" alt="Расположение офиса на карте"></a>
-                    <a href="#" class="write-us">Напишите нам</a>
-                </section>
-            </div>
-        </div>
+        </section>
+        <section class="pagination">
+            <a class="page-back">Назад</a>
+            <ol>
+                <li class="page-active">1</li>
+                <li class="page">2</li>
+                <li class="page">3</li>
+            </ol>
+            <a class="page-forward">Вперед</a>
+        </section>
     </main>
     <footer class="container">
         <div class="footer-up">
@@ -151,5 +148,4 @@
         </div>
     </footer>
 </body>
-
 </html>
