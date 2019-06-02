@@ -8,8 +8,12 @@
     <header class="container main-header">
         <a href="index.html" class="logo"><img src="img/logo-device.svg" alt="device" width="163px" height="35px"></a>
         <div class="middle-head">
-            <!-- Здесь будет форма -->
-            <a href="#" class="login-link">Войти</a>
+            <form class="search" method="get" action="#">
+                <label class="search-icon" for="search-input"></label>
+                <input id="search-input" type="search" placeholder="Поиск по сайту">
+            </form>
+            <a class="user-profile" href="#" aria-label="Переход на страницу профиля">Валентин Петухов</a>
+            <a href="#" class="exit-profile">Выйти</a>
             <a href="#" class="compare-link">Сравнить</a>
             <a href="#" class="shopping-cart">Корзина</a>
         </div>
@@ -69,7 +73,74 @@
             <div class="filter-title">Фильтр:</div>
             <!-- Здесь будет сортировка -->
         </div>
-        <!-- Здесь будет фильтр -->
+        <form class="filter" method="get" action="#">
+            <fieldset class="filter-price">
+                <legend>Стоимость</legend>
+                <div class="range-filter">
+                    <div class="scale">
+                        <div class="bar"></div>
+                    </div>
+                    <button type="button" class="toggle toggle-min"></button>
+                    <button type="button" class="toggle toggle-max"></button>
+                </div>
+            </fieldset>
+            <fieldset class="filter-color">
+                <legend>Цвет</legend>
+                <p>
+                    <label>
+                        <input class="input-checkbox" type="checkbox" name="Black">
+                        <span class="castom-checkbox"></span>
+                        Черный
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="input-checkbox" type="checkbox" name="white">
+                        <span class="castom-checkbox"></span>
+                        Белый
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="input-checkbox" type="checkbox" name="Blue">
+                        <span class="castom-checkbox"></span>
+                        Синий
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="input-checkbox" type="checkbox" name="Red">
+                        <span class="castom-checkbox"></span>
+                        Красный
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="input-checkbox" type="checkbox" name="Pink">
+                        <span class="castom-checkbox"></span>
+                        Розовый
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset class="filter-bluetooth">
+                <legend>Bluetooth</legend>
+                <p>
+                    <label>
+                        <input class="input-radio" type="radio" name="bluetooth">
+                        <span class="castom-radio"></span>
+                        Есть
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="input-radio" type="radio" name="bluetooth">
+                        <span class="castom-radio"></span>
+                        Нет
+                    </label>
+                </p>
+            </fieldset>
+            <button class="filter-show" type="submit">Показать</button>
+        </form>
         <section class="catalog">
             <ul>
                 <li class="catalog-item">
@@ -121,18 +192,25 @@
         <section class="pagination">
             <a class="page-back">Назад</a>
             <ol>
-                <li class="page-active">1</li>
-                <li class="page">2</li>
-                <li class="page">3</li>
+                <li class="page-active">
+                    <a>1</a>
+                </li>
+                <li class="page">
+                    <a href="#">2</a>
+                </li>
+                <li class="page">
+                    <a href="#">3</a>
+                </li>
             </ol>
-            <a class="page-forward">Вперед</a>
+            <a class="page-forward" href="#">Вперед</a>
         </section>
     </main>
     <footer class="container">
         <div class="footer-up">
             <a href="#" class="footer-logo"><img src="#" alt="device"></a>
             <div class="footer-acc">
-                <a href="#" class="footer-login-link">Войти</a>
+                <a class="footer-user-profile" href="#" aria-label="Переход на страницу профиля">Валентин Петухов</a>
+                <a href="#" class="footer-exit-profile">Выйти</a>
                 <a href="#" class="footer-compare-link">Сравнить</a>
                 <a href="#" class="footer-shopping-cart">Корзина</a>
             </div>

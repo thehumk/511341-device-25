@@ -10,7 +10,10 @@
     <header class="container main-header">
         <a href="#" class="logo"><img src="img/logo-device.svg" alt="device" width="163px" height="35px"></a>
         <div class="middle-head">
-            <!-- Здесь будет форма -->
+            <form class="search" method="get" action="#">
+                <label class="search-icon" for="search-input"></label>
+                <input id="search-input" type="search" placeholder="Поиск по сайту">
+            </form>
             <a href="#" class="login-link">Войти</a>
             <a href="#" class="compare-link">Сравнить</a>
             <a href="#" class="shopping-cart">Корзина</a>
@@ -147,13 +150,37 @@
         </div>
         <div class="footer-down">
             <section class="footer-social">
-                <a href="#" class="social social-fb"></a>
-                <a href="#" class="social social-inst"></a>
-                <a href="#" class="social social-twit"></a>
+                <a href="#" class="social social-fb" aria-label="Фейсбук"></a>
+                <a href="#" class="social social-inst" aria-label="Инстаграм"></a>
+                <a href="#" class="social social-twit" aria-label="Твиттер"></a>
             </section>
             <a href="https://htmlacademy.ru/intensive/htmlcss" class="creator"></a>
         </div>
     </footer>
+    <div class="visually-hidden">
+        <form methot="post" action="#">
+            <fieldset class="write-us-popap">
+                <div>
+                    <label for="field-name">Ваше имя</label>
+                    <input id="field-name" type="text" name="login" placeholder="Имя Фамилия">
+                </div>
+                <div>
+                    <label for="field-email">Ваш e-mail:</label>
+                    <input id="field-email" type="email" name="email" placeholder="email@example.com">
+                </div>
+                <div>
+                    <label for="field-text">Текст письма</label>
+                    <textarea id="field-text" name="letter" placeholder="В свободной форме"></textarea>
+                </div>
+                <button type="submit" class="send-letter">Отправить</button>
+                <button type="button" class="close-icon" aria-label="Закрыть обратную связь"></button>
+            </fieldset>
+        </form>
+    </div>
+    <div class="full-map visually-hidden">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473663!2d37.52742931604449!3d55.68703400452982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1559490310730!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <button type="button" class="close-icon" aria-label="Закрыть карту"></button>
+    </div>
 </body>
 
 </html>
